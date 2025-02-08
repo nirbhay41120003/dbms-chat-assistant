@@ -1,5 +1,3 @@
-# tacnique-assissment
-
 
 # Database Chat Assistant
 
