@@ -13,11 +13,6 @@ A natural language interface for querying employee and department information fr
 - Detailed employee reports
 - Department statistics and analytics
 
-### Visualizations
-- Salary distribution charts
-- Hiring trend graphs
-- Department comparisons
-- Statistical analysis plots
 
 ## Getting Started
 
@@ -58,14 +53,7 @@ Show me all employees in the Sales department
 Who is the manager of the Engineering department
 List all employees hired after 2021-01-01
 
-# Analytics
-Show salary distribution
-Show department statistics for Engineering
-Compare salaries between departments
-Show hiring trends
 
-# Detailed Reports
-Generate employee report for Alice
 ```
 
 ## Project Structure
@@ -117,28 +105,12 @@ CREATE TABLE Departments (
    - Parameterized queries for security
    - Error handling and validation
 
-3. **Data Visualization**
-   - Matplotlib for generating charts
-   - Multiple visualization types
-   - Dynamic data representation
-
-4. **Output Formatting**
-   - Tabulated data presentation
-   - Formatted currency and dates
-   - Clear, readable responses
-
 ## Known Limitations
 
 1. **Query Understanding**
    - Limited to predefined query patterns
    - No fuzzy matching for similar queries
    - Cannot handle complex, multi-part questions
-
-2. **Data Visualization**
-   - Static image generation only
-   - No interactive visualizations
-   - Limited customization options
-
 3. **Database**
    - Single SQLite file
    - No real-time updates
