@@ -1,14 +1,9 @@
+import os
 from flask import Flask, render_template, request, jsonify
 from chat_assistant import DatabaseChatAssistant
-import os
 
 app = Flask(__name__)
 assistant = DatabaseChatAssistant()
-
-# Ensure the database exists
-if not os.path.exists('company.db'):
-    from setup_database import create_database
-    create_database()
 
 @app.route('/')
 def home():
@@ -24,4 +19,5 @@ def process_query():
     return jsonify({'response': response})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
